@@ -18,23 +18,17 @@ $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 TARGET_SCREEN_HEIGHT := 2400
 TARGET_SCREEN_WIDTH := 1080
 
-PRODUCT_NAME := lineage_veux
+# Device identifier. This must come after all inclusions
+PRODUCT_NAME := yaap_veux
 PRODUCT_BRAND := Redmi
 PRODUCT_DEVICE := veux
 PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_MODEL := 2201116SG
-PRODUCT_NAME := lineage_veux
+PRODUCT_NAME := yaap_veux
 PRODUCT_SYSTEM_NAME := veux_global
-
-PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     BuildDesc="veux_global-user 13 TKQ1.221114.001 V816.0.12.0.TKCMIXM release-keys" \
     BuildFingerprint=Redmi/veux_global/veux:13/TKQ1.221114.001/V816.0.12.0.TKCMIXM:user/release-keys
-    
-# Axion Flags
-AXION_CAMERA_REAR_INFO := 108,64,8
-AXION_CAMERA_FRONT_INFO := 16
-AXION_MAINTAINER := アムリタ
-AXION_PROCESSOR := Qualcomm_Snapdragon_695_5G_(SM6375)
-WITH_GMS := true
+
+PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
