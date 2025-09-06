@@ -14,12 +14,6 @@ $(call inherit-product, $(LOCAL_PATH)/device.mk)
 # Inherit some common lineage stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
-# Whether you are compiling being an OFFICIAL Maintainer:
-WITAQUA_BUILD_TYPE := UNOFFICIAL
-
-# Maintainer Name
-WITAQUA_MAINTAINER := "krrish9130"
-
 # Boot animation
 TARGET_SCREEN_HEIGHT := 2400
 TARGET_SCREEN_WIDTH := 1080
